@@ -49,20 +49,21 @@ class App extends React.Component {
 
     render() {
         return (
-            <div>
-                <input type="text" placeholder="Recherche une serie" value={this.state.value}
+            <div class="wrapper">
+                <h1>Catalogue de série</h1>
+                <input id="recherche" type="text" placeholder="Recherche une serie" value={this.state.value}
                        onChange={this.handleChange}/>
                 <ul>
                     {this.state.value !== "" ?
 
                         this.state.seriesList.filter(
-                            a => a.seriesName.indexOf(this.state.value) > -1).map(item => <li
+                            e => e.seriesName.indexOf(this.state.value) > -1).map(item => <li
                             key={item.id}>{item.seriesName}
 
                             <ul>
                                 {this.state.seriesEpisodesList.filter(
-                                    b => b.serie_id == item.id).map(episode => episode.episodes_list.filter(
-                                    c => c.episodeName).map(name => <li>{name.episodeName}</li>)
+                                    f => f.serie_id == item.id).map(episode => episode.episodes_list.filter(
+                                    g => g.episodeName).map(name => <li>{name.episodeName}</li>)
                                 )
 
                                 }
@@ -70,7 +71,7 @@ class App extends React.Component {
                         </li>)
 
 
-                        : <h1>Rien n'est Marqué</h1>
+                        : <p>Rien n'est Marqué</p>
 
                     }
 

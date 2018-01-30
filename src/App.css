@@ -17,11 +17,31 @@
 .App-title {
   font-size: 1.5em;
 }
-
+h1{
+  font-family: sans-serif;
+  font-size: 2em;
+  width: 400px;
+}
+ul{
+  color: darkred;
+}
+p{
+  font-size: 1em;
+  font-family: sans-serif;
+}
 .App-intro {
   font-size: large;
 }
+.wrapper{
+  margin-left: 20px;
 
+}
+#recherche {
+  width: 400px;
+  height: 4vh;
+  font-family: sans-serif;
+  font-size: 1.5em;
+}
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
