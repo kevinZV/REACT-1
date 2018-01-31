@@ -65,7 +65,7 @@ class App extends React.Component {
                                 key={item.id}>{item.seriesName}
 
                                 <ul>
-                                    //on recupere les episodes en fonction de l'id de la série
+
                                     {this.state.seriesEpisodesList.filter(
                                         f => f.serie_id == item.id).map(episode => episode.episodes_list.filter(
                                         g => g.episodeName).map(name => <li>{name.episodeName}</li>)
