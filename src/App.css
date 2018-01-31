@@ -19,14 +19,14 @@
 }
 h1{
   font-family: sans-serif;
-  font-size: 2em;
+  font-size: 1.6em;
   width: 400px;
 }
 ul{
   color: darkred;
 }
 p{
-  font-size: 1em;
+  font-size: 1.1em;
   font-family: sans-serif;
 }
 .App-intro {
@@ -38,9 +38,9 @@ p{
 }
 #recherche {
   width: 400px;
-  height: 4vh;
+  height: 3vh;
   font-family: sans-serif;
-  font-size: 1.5em;
+  font-size: 1.3em;
 }
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
